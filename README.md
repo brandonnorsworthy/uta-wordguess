@@ -1,5 +1,7 @@
 # Unit 04 Mini-Project: Word Guess
 
+deployment: https://brandonnorsworthy.github.io/uta-wordguess/
+
 In this activity, you will work with a group to build a game using JavaScript and Web APIs.
 
 ## Instructions
