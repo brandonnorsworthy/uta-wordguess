@@ -8,7 +8,7 @@ In this activity, you will work with a group to build a game using JavaScript an
 
 The completed application should meet the following criteria:
 
-* As a user, I want to start the game by clicking on a button. 
+* ✅ As a user, I want to start the game by clicking on a button. 
 
 * ✅ As a user, I want to try and guess a word by filling in a number of blanks that match the number of letters in that word.
 
