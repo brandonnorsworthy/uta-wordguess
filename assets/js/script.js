@@ -1,5 +1,6 @@
 startBtn = document.querySelector("#startBtn");
 wordDisplay = document.querySelector("#wordDisplay");
+winDisplay = document.querySelector("#winDisplay");
 
 wordsToChooseFrom = ["javascript", "string", "object", "method", "null", "undefined"];
 chosenWord = '';
@@ -7,7 +8,7 @@ chosenWordArr = []
 guessedWord = '';
 
 function winScenario(){
-    wordDisplay.textContent = "You Win!";
+    winDisplay.textContent = "You Win!";
 }
 
 function fillPTag(){
@@ -35,6 +36,8 @@ function checkKeyAgainstWord(event) {
 }
 
 function chooseRandomWord() {
+    winDisplay.textContent = "";
+
     chosenWord = wordsToChooseFrom[Math.floor(Math.random() * wordsToChooseFrom.length)];
     guessedWord = ''
     for (let index = 0; index < chosenWord.length; index++) {
@@ -62,7 +65,7 @@ startBtn.addEventListener("click", chooseRandomWord);
 4. ✅ second string for whats guessed
 5. ✅ fill guessed word with underscores
 6. ✅ when they press a key if it matches add the correct character in the place of the underscore
-7. button, display blanks,
+7. ✅ button, display blanks,
 7. build a timer, display timer
 8. display win
  */
