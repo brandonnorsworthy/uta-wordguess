@@ -6,6 +6,8 @@ In this activity, you will work with a group to build a game using JavaScript an
 
 ## Instructions
 
+testing new verified commmits
+
 The completed application should meet the following criteria:
 
 * ✅ As a user, I want to start the game by clicking on a button. 
