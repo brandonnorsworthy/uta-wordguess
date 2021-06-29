@@ -1,18 +1,39 @@
+:root{
+    --btnBackground: #5865f2;
+    --btnBackgroundHover: #4752c4;
+    --mainBackground: #36393f;
+    --mainTextColor: #ffffff;
+    --secondaryBackground: #4f545c;
+}
+
 body {
-    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--mainBackground);
+    color: var(--mainTextColor);
 }
 
 button {
-    width: 100%;
+    color: var(--mainTextColor);
+    background: var(--btnBackground);
+    border: 0px;
+    border-radius: 15px;
+    width: fit-content;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8rem;
+    font-size: 6rem;
+}
+
+button:hover {
+    background: var(--btnBackgroundHover);
 }
 
 p {
     display: flex;
     justify-content: center;
-    font-size: 8rem;
+    font-size: 6rem;
 }

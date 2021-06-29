@@ -1,18 +1,20 @@
+//elements
 startBtn = document.querySelector("#startBtn");
 wordDisplay = document.querySelector("#wordDisplay");
 winDisplay = document.querySelector("#winDisplay");
 
+//global variables
 wordsToChooseFrom = ["javascript", "string", "object", "method", "null", "undefined"];
 chosenWord = '';
 chosenWordArr = []
 guessedWord = '';
 
 function winScenario(){
-    winDisplay.textContent = "You Win!";
+    winDisplay.textContent = "You Win!"; //confirm to user win condition was met
 }
 
 function fillPTag(){
-    wordDisplay.textContent = guessedWord;
+    wordDisplay.textContent = guessedWord; //display guessed letters
 }
 
 function checkKeyAgainstWord(event) {
@@ -27,7 +29,7 @@ function checkKeyAgainstWord(event) {
             }
         });
 
-        fillPTag();
+        wordDisplay.textContent = guessedWord; //display guessed letters
 
         if (!guessedWord.includes("_")){
             winScenario();
@@ -55,17 +57,4 @@ function chooseRandomWord() {
 }
 
 document.addEventListener("keydown", checkKeyAgainstWord);
-
 startBtn.addEventListener("click", chooseRandomWord);
-
-/* 
-1. ✅ keydown working
-2. ✅ array of a couple of words to choose from
-3. ✅ see if that key thats pressed matches the word that was chosen
-4. ✅ second string for whats guessed
-5. ✅ fill guessed word with underscores
-6. ✅ when they press a key if it matches add the correct character in the place of the underscore
-7. ✅ button, display blanks,
-7. build a timer, display timer
-8. display win
- */
